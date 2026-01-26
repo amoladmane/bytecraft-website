@@ -48,6 +48,13 @@
             font-weight: 700;
         }
 
+        .logo-subtitle {
+            color: #fbbf24;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
         .logo-img {
             height: 50px;
             width: auto;
@@ -277,7 +284,7 @@
             height: 10px;
             background: #ef4444;
             border-radius: 50%;
-            animation: pulse 2s infinite;
+            animation: blink 1.5s ease-in-out infinite;
         }
 
         @keyframes pulse {
@@ -515,15 +522,29 @@
         .week-number {
             background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%);
             color: white;
-            width: 60px;
-            height: 60px;
+            min-width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-weight: 800;
-            font-size: 1.2rem;
+            font-weight: 700;
             flex-shrink: 0;
+            padding: 0.5rem;
+        }
+
+        .week-number .week-label {
+            font-size: 0.7rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .week-number .week-num {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1;
         }
 
         .week-title {
@@ -783,15 +804,11 @@
         }
 
         @media (max-width: 768px) {
-            .logo-img {
-                height: 40px;
+            .logo {
+                font-size: 1rem;
             }
 
-            .logo-text .brand {
-                font-size: 1.1rem;
-            }
-
-            .logo-text .tagline {
+            .logo-subtitle {
                 font-size: 0.65rem;
             }
 
@@ -920,9 +937,16 @@
             }
 
             .week-number {
-                width: 50px;
-                height: 50px;
-                font-size: 1rem;
+                min-width: 60px;
+                height: 60px;
+            }
+
+            .week-number .week-label {
+                font-size: 0.6rem;
+            }
+
+            .week-number .week-num {
+                font-size: 1.5rem;
             }
 
             .week-title h3 {
@@ -976,12 +1000,13 @@
     <header>
         <nav>
             <div class="logo">
-                <!-- LOGO IMAGE - Make sure logo.png is uploaded to your GitHub repository -->
-                <img src="logo.png?v=2" alt="ByteCraft Data Lab" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <!-- Fallback if logo doesn't load -->
-                <div class="logo-text" style="display:none;">
-                    <span class="brand">ByteCraft Data Lab</span>
-                    <span class="tagline">Learn Python Programming</span>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 0.2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        🐍 <span style="color: white; font-size: 1.4rem; font-weight: 700;">ByteCraft</span> <span style="color: #fbbf24; font-size: 1.4rem; font-weight: 700;">Data Lab</span>
+                    </div>
+                    <div style="color: #fbbf24; font-size: 0.75rem; font-weight: 500; letter-spacing: 1px;">
+                        Python Programming
+                    </div>
                 </div>
             </div>
             <ul class="nav-links" id="navLinks">
@@ -1100,7 +1125,10 @@
             <!-- Week 1 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 1</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">1</span>
+                    </div>
                     <div class="week-title">
                         <h3>Python Fundamentals & Setup</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1122,7 +1150,10 @@
             <!-- Week 2 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 2</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">2</span>
+                    </div>
                     <div class="week-title">
                         <h3>Loops & Problem Solving</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1144,7 +1175,10 @@
             <!-- Week 3 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 3</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">3</span>
+                    </div>
                     <div class="week-title">
                         <h3>Functions & Modules</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1166,7 +1200,10 @@
             <!-- Week 4 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 4</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">4</span>
+                    </div>
                     <div class="week-title">
                         <h3>Data Structures - Lists & Tuples</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1188,7 +1225,10 @@
             <!-- Week 5 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 5</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">5</span>
+                    </div>
                     <div class="week-title">
                         <h3>Dictionaries & Sets</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1210,7 +1250,10 @@
             <!-- Week 6 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 6</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">6</span>
+                    </div>
                     <div class="week-title">
                         <h3>File Handling & Exception Handling</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1232,7 +1275,10 @@
             <!-- Week 7 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 7</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">7</span>
+                    </div>
                     <div class="week-title">
                         <h3>SQL & Database Basics</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1254,7 +1300,10 @@
             <!-- Week 8 -->
             <div class="week-card">
                 <div class="week-header">
-                    <div class="week-number">Week 8</div>
+                    <div class="week-number">
+                        <span class="week-label">Week</span>
+                        <span class="week-num">8</span>
+                    </div>
                     <div class="week-title">
                         <h3>Final Project & Interview Prep</h3>
                         <p class="week-duration">5 sessions | 7.5 hours</p>
@@ -1422,6 +1471,7 @@
                 <h3>Quick Links</h3>
                 <a href="#home">Home</a>
                 <a href="#schedule">Class Schedule</a>
+                <a href="#curriculum">2-Month Curriculum</a>
                 <a href="#pricing">Course Fee</a>
                 <a href="#instructor">Our Instructor</a>
             </div>
