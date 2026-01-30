@@ -1008,6 +1008,76 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Sticky Book Demo Button */
+.sticky-demo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    animation: pulse-demo 2s infinite;
+}
+
+.sticky-demo-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+}
+
+.sticky-demo-btn-icon {
+    font-size: 1.3rem;
+    animation: shake 1s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse-demo {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
+    }
+}
+
+/* Shake animation for icon */
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .sticky-demo-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .sticky-demo-btn-icon {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-demo-btn {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -1700,6 +1770,11 @@
   ByteCraft Data Lab is an online coaching platform offering Python, SQL, and Data Analytics training
   for students from Latur and across Maharashtra.
     </div>
+        <!-- Sticky Book Demo Button -->
+<a href="https://wa.me/919860640465?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class%20for%20Python%20course" class="sticky-demo-btn" target="_blank">
+    <span class="sticky-demo-btn-icon">📞</span>
+    Book Free Demo
+</a>
 </footer>
             
 
