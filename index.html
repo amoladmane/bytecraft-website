@@ -112,127 +112,96 @@
             cursor: pointer;
         }
 
-        /* New Hero Feature Boxes */
-.hero-feature-boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    max-width: 700px;
-    margin: 2.5rem auto;
-}
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 50%, #5b21b6 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-.feature-box {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 1.2rem 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: all 0.3s;
-}
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(251, 191, 36, 0.1);
+            border-radius: 50%;
+        }
 
-.feature-box:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
-    border-color: #fbbf24;
-}
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-.feature-icon {
-    font-size: 2rem;
-    flex-shrink: 0;
-}
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
 
-.feature-text {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: left;
-}
+        .hero .highlight {
+            color: #fbbf24;
+        }
 
-/* Fee Badge */
-.fee-badge {
-    background: #fbbf24;
-    color: #2d1b4e;
-    padding: 1.3rem 3rem;
-    border-radius: 50px;
-    display: inline-block;
-    margin: 2rem 0;
-    font-size: 1.4rem;
-    font-weight: 800;
-    box-shadow: 0 10px 30px rgba(251, 191, 36, 0.5);
-}
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
 
-/* Hero CTA Buttons */
-.hero-cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
-.hero-btn-enroll {
-    background: #fbbf24;
-    color: #2d1b4e;
-    padding: 1.1rem 2.8rem;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s;
-    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
-    border: none;
-}
+        .btn-primary {
+            background: #fbbf24;
+            color: #2d1b4e;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+        }
 
-.hero-btn-enroll:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(251, 191, 36, 0.6);
-    background: #fcd34d;
-}
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(251, 191, 36, 0.4);
+        }
 
-.hero-btn-syllabus {
-    background: transparent;
-    color: white;
-    padding: 1.1rem 2.8rem;
-    border: 2px solid white;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s;
-}
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
 
-.hero-btn-syllabus:hover {
-    background: white;
-    color: #2d1b4e;
-    transform: translateY(-3px);
-}
-
-/* Mobile Responsive for Feature Boxes */
-@media (max-width: 768px) {
-    .hero-feature-boxes {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-    }
-    
-    .fee-badge {
-        font-size: 1.2rem;
-        padding: 1rem 2rem;
-    }
-    
-    .hero-cta-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .hero-btn-enroll,
-    .hero-btn-syllabus {
-        width: 100%;
-    }
-}
+        .btn-secondary:hover {
+            background: white;
+            color: #2d1b4e;
+        } 
         /* Trust Badges */
         .trust-badges {
             background: white;
@@ -1137,42 +1106,19 @@
     </header>
 
     <!-- Hero Section -->
-    <!-- Hero Section -->
+     <!-- Hero Section -->
+
 <section class="hero" id="home">
     <div class="hero-content">
-        <h1>Python + SQL Exam-Oriented Certificate Course</h1>
-        <p class="subtitle">For Polytechnic & BCA Students | Live Online Classes</p>
-        
-        <div class="hero-feature-boxes">
-            <div class="feature-box">
-                <span class="feature-icon">📚</span>
-                <span class="feature-text">Syllabus-wise teaching</span>
-            </div>
-            <div class="feature-box">
-                <span class="feature-icon">🎓</span>
-                <span class="feature-text">University exam preparation</span>
-            </div>
-            <div class="feature-box">
-                <span class="feature-icon">👨‍🏫</span>
-                <span class="feature-text">Live instructor-led sessions</span>
-            </div>
-            <div class="feature-box">
-                <span class="feature-icon">📜</span>
-                <span class="feature-text">Certificate on completion</span>
-            </div>
-        </div>
-
-        <div class="fee-badge">
-            Course Fee: ₹3,499 | Duration: 2 Months
-        </div>
-
-        <div class="hero-cta-buttons">
-            <a href="https://wa.me/919421620187?text=Hi%2C%20I%20want%20to%20enroll%20in%20the%20exam-oriented%20Python%20+%20SQL%20course" class="hero-btn-enroll" target="_blank">Enroll Now</a>
-            <a href="#syllabus" class="hero-btn-syllabus">Download Syllabus</a>
+        <h1>Learn <span class="highlight">Python, SQL & Data Analytics</span> Online</h1>
+        <p>Live online coaching via Microsoft Teams for students in Latur, Maharashtra</p>
+        <p style="font-size: 1rem; opacity: 0.9; margin-top: 1rem;">Master programming skills with structured curriculum, hands-on projects, and personalized guidance</p>
+        <div class="cta-buttons">
+            <a href="#pricing" class="btn-primary">View Course Details</a>
+            <a href="#schedule" class="btn-secondary">Check Schedule</a>
         </div>
     </div>
 </section>
-
 
     <!-- Trust Badges -->
     <!-- Trust Badges -->
