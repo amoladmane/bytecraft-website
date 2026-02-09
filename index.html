@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="ByteCraft Data Lab - Professional Python Programming Classes in Latur, Maharashtra">
     <meta name="theme-color" content="#2d1b4e">
+    <link rel="canonical" href="https://bytecraftdatalab.com/">
     <title>ByteCraft Data Lab | Learn Python Programming</title>
-    
-      <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    
-
     <style>
         * {
             margin: 0;
@@ -27,7 +25,6 @@
             background: #f7fafc;
         }
 
-        /* Header */
         header {
             background: #2d1b4e;
             color: white;
@@ -62,30 +59,6 @@
             letter-spacing: 1px;
         }
 
-        .logo-img {
-            height: 50px;
-            width: auto;
-            display: block;
-            filter: brightness(1.1);
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-        }
-
-        .logo-text .brand {
-            font-size: 1.4rem;
-            color: white;
-        }
-
-        .logo-text .tagline {
-            font-size: 0.75rem;
-            color: #fbbf24;
-            font-weight: 500;
-        }
-
         .nav-links {
             display: flex;
             gap: 2.5rem;
@@ -110,9 +83,11 @@
             color: white;
             font-size: 1.8rem;
             cursor: pointer;
+            padding: 0.5rem;
+            min-width: 44px;
+            min-height: 44px;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 50%, #5b21b6 100%);
             color: white;
@@ -201,8 +176,8 @@
         .btn-secondary:hover {
             background: white;
             color: #2d1b4e;
-        } 
-        /* Trust Badges */
+        }
+
         .trust-badges {
             background: white;
             padding: 2rem;
@@ -237,7 +212,6 @@
             font-size: 0.95rem;
         }
 
-        /* Sections */
         section {
             max-width: 1200px;
             margin: 0 auto;
@@ -261,7 +235,6 @@
             font-size: 1.1rem;
         }
 
-        /* Class Schedule Section */
         .schedule-container {
             background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%);
             border-radius: 20px;
@@ -295,16 +268,15 @@
         }
 
         @keyframes blink {
-    0%, 100% { 
-        opacity: 1; 
-        transform: scale(1);
-    }
-    50% { 
-        opacity: 0.3; 
-        transform: scale(1.2);
-    }
-}
-        
+            0%, 100% { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+            50% { 
+                opacity: 0.3; 
+                transform: scale(1.2);
+            }
+        }
 
         .schedule-time {
             font-size: 3rem;
@@ -350,7 +322,6 @@
             font-size: 1.1rem;
         }
 
-        /* Course Fee Section */
         .pricing-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -500,125 +471,6 @@
             text-align: center;
         }
 
-        /* Curriculum Section */
-        .curriculum-section {
-            background: #f7fafc;
-            padding: 5rem 2rem;
-        }
-
-        .curriculum-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .week-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            border-left: 5px solid #fbbf24;
-            transition: all 0.3s;
-        }
-
-        .week-card:hover {
-            transform: translateX(10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-        }
-
-        .week-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .week-number {
-            background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%);
-            color: white;
-            min-width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            flex-shrink: 0;
-            padding: 0.5rem;
-        }
-
-        .week-number .week-label {
-            font-size: 0.7rem;
-            opacity: 0.9;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .week-number .week-num {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 1;
-        }
-
-        .week-title {
-            flex: 1;
-        }
-
-        .week-title h3 {
-            color: #2d1b4e;
-            font-size: 1.4rem;
-            margin-bottom: 0.3rem;
-        }
-
-        .week-duration {
-            color: #718096;
-            font-size: 0.9rem;
-        }
-
-        .week-topics {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .week-topics li {
-            padding: 0.6rem 0;
-            padding-left: 2rem;
-            position: relative;
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .week-topics li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #fbbf24;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .week-project {
-            background: #fef3c7;
-            padding: 1rem;
-            border-radius: 10px;
-            margin-top: 1rem;
-            display: flex;
-            align-items: start;
-            gap: 0.8rem;
-        }
-
-        .week-project-icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-
-        .week-project-text {
-            color: #92400e;
-            font-weight: 600;
-        }
-
-        /* Excellence Features */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -653,7 +505,6 @@
             line-height: 1.7;
         }
 
-        /* Instructor Section */
         .instructor-section {
             background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%);
             border-radius: 20px;
@@ -716,7 +567,6 @@
             margin-bottom: 0.3rem;
         }
 
-        /* Testimonials */
         .testimonials {
             background: #f7fafc;
             padding: 5rem 2rem;
@@ -754,7 +604,6 @@
             color: #2d1b4e;
         }
 
-        /* Footer */
         footer {
             background: #1a202c;
             color: white;
@@ -796,7 +645,187 @@
             color: #cbd5e0;
         }
 
-        /* Mobile Responsive */
+        .sticky-demo-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            animation: pulse-demo 2s infinite;
+        }
+
+        .sticky-demo-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        .sticky-demo-btn-icon {
+            font-size: 1.3rem;
+        }
+
+        @keyframes pulse-demo {
+            0%, 100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        .demo-popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .demo-popup-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-popup {
+            background: white;
+            border-radius: 20px;
+            max-width: 500px;
+            width: 90%;
+            padding: 2.5rem;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease;
+        }
+
+        .demo-popup-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #718096;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .demo-popup-close:hover {
+            background: #f7fafc;
+            color: #2d1b4e;
+        }
+
+        .demo-popup-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .demo-popup-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .demo-popup h2 {
+            color: #2d1b4e;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        .demo-popup-subtitle {
+            color: #718096;
+            font-size: 1rem;
+        }
+
+        .demo-form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-form-group label {
+            display: block;
+            color: #2d1b4e;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .demo-form-group input {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .demo-form-group input:focus {
+            outline: none;
+            border-color: #2d1b4e;
+            box-shadow: 0 0 0 3px rgba(45, 27, 78, 0.1);
+        }
+
+        .demo-submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+            color: white;
+            padding: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .demo-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .demo-popup-note {
+            text-align: center;
+            color: #718096;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         @media (max-width: 968px) {
             .schedule-container {
                 grid-template-columns: 1fr;
@@ -809,6 +838,7 @@
             .instructor-section {
                 grid-template-columns: 1fr;
                 text-align: center;
+                padding: 3rem 2rem;
             }
 
             .highlight-item {
@@ -850,9 +880,6 @@
 
             .mobile-menu-btn {
                 display: block;
-                padding: 0.5rem;
-                min-width: 44px;
-                min-height: 44px;
             }
 
             .hero {
@@ -946,29 +973,24 @@
                 gap: 2rem;
             }
 
-            .week-card {
-                padding: 1.5rem;
+            .sticky-demo-btn {
+                bottom: 15px;
+                right: 15px;
+                padding: 12px 20px;
+                font-size: 0.9rem;
             }
 
-            .week-number {
-                min-width: 60px;
-                height: 60px;
+            .sticky-demo-btn-icon {
+                font-size: 1.1rem;
             }
 
-            .week-number .week-label {
-                font-size: 0.6rem;
+            .demo-popup {
+                padding: 2rem 1.5rem;
+                width: 95%;
             }
 
-            .week-number .week-num {
+            .demo-popup h2 {
                 font-size: 1.5rem;
-            }
-
-            .week-title h3 {
-                font-size: 1.2rem;
-            }
-
-            .week-topics li {
-                font-size: 0.95rem;
             }
         }
 
@@ -1006,235 +1028,17 @@
             .testimonial-grid {
                 grid-template-columns: 1fr;
             }
+
+            .sticky-demo-btn {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
         }
-        /* Sticky Book Demo Button */
-.sticky-demo-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
-    color: white;
-    padding: 15px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    animation: pulse-demo 2s infinite;
-}
-
-.sticky-demo-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
-}
-
-.sticky-demo-btn-icon {
-    font-size: 1.3rem;
-    animation: shake 1s infinite;
-}
-
-/* Pulse animation */
-@keyframes pulse-demo {
-    0%, 100% {
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-    }
-    50% {
-        box-shadow: 0 8px 35px rgba(37, 211, 102, 0.6);
-    }
-}
-
-/* Shake animation for icon */
-@keyframes shake {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .sticky-demo-btn {
-        bottom: 15px;
-        right: 15px;
-        padding: 12px 20px;
-        font-size: 0.9rem;
-    }
-    
-    .sticky-demo-btn-icon {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .sticky-demo-btn {
-        bottom: 10px;
-        right: 10px;
-        padding: 10px 18px;
-        font-size: 0.85rem;
-    }
-}
-        /* Demo Popup Styles */
-.demo-popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 10000;
-    animation: fadeIn 0.3s ease;
-}
-
-.demo-popup-overlay.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.demo-popup {
-    background: white;
-    border-radius: 20px;
-    max-width: 500px;
-    width: 90%;
-    padding: 2.5rem;
-    position: relative;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    animation: slideUp 0.4s ease;
-}
-
-.demo-popup-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #718096;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s;
-}
-
-.demo-popup-close:hover {
-    background: #f7fafc;
-    color: #2d1b4e;
-}
-
-.demo-popup-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.demo-popup-icon {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.demo-popup h2 {
-    color: #2d1b4e;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    font-weight: 800;
-}
-
-.demo-popup-subtitle {
-    color: #718096;
-    font-size: 1rem;
-}
-
-.demo-form-group {
-    margin-bottom: 1.5rem;
-}
-
-.demo-form-group label {
-    display: block;
-    color: #2d1b4e;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.demo-form-group input {
-    width: 100%;
-    padding: 0.9rem 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.3s;
-}
-
-.demo-form-group input:focus {
-    outline: none;
-    border-color: #2d1b4e;
-    box-shadow: 0 0 0 3px rgba(45, 27, 78, 0.1);
-}
-
-.demo-submit-btn {
-    width: 100%;
-    background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
-    color: white;
-    padding: 1.1rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
-}
-
-.demo-submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-}
-
-.demo-popup-note {
-    text-align: center;
-    color: #718096;
-    font-size: 0.85rem;
-    margin-top: 1rem;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .demo-popup {
-        padding: 2rem 1.5rem;
-        width: 95%;
-    }
-    
-    .demo-popup h2 {
-        font-size: 1.5rem;
-    }
-}
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
             <div class="logo">
@@ -1248,7 +1052,7 @@
                 </div>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="/curriculum.html">Curriculum</a></li>
                 <li><a href="/syllabus.pdf" target="_blank">Syllabus</a></li>
@@ -1260,56 +1064,49 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-     <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Master <span class="highlight">Python Programming</span> with Industry Experts</h1>
+            <p>Transform your career with hands-on coding, real-world projects, and job-oriented training in just 2 months</p>
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn-primary">Enroll Now - ₹3499/-</a>
+                <a href="/syllabus.pdf" target="_blank" class="btn-secondary">📄 Download Syllabus</a>
+                <a href="#schedule" class="btn-secondary">View Schedule</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Learn <span class="highlight">Python, SQL & Data Analytics</span> Online</h1>
-        <p>Live online coaching via Microsoft Teams for students in Latur, Maharashtra</p>
-        <p style="font-size: 1rem; opacity: 0.9; margin-top: 1rem;">For Polytechnic & BCA Students | Live Online Classes</p>
-        <div class="cta-buttons">
-            <a href="#pricing" class="btn-primary">View Course Details</a>
-            <a href="/syllabus.pdf" target="_blank" class="btn-secondary">📄 Download Syllabus</a>
-            <a href="#schedule" class="btn-secondary">Check Schedule</a>
+    <div class="trust-badges">
+        <div class="badge">
+            <div class="badge-icon">🎓</div>
+            <h3>100+</h3>
+            <p>Students Trained</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">💼</div>
+            <h3>Career Focused</h3>
+            <p>Interview Ready</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">⚡</div>
+            <h3>Live Classes</h3>
+            <p>Interactive Sessions</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">🏆</div>
+            <h3>Project Based</h3>
+            <p>Real-World Practice</p>
         </div>
     </div>
-</section>
 
-    <!-- Trust Badges -->
-    <!-- Trust Badges -->
-<div class="trust-badges">
-    <div class="badge">
-        <div class="badge-icon">💻</div>
-        <h3>Live Classes</h3>
-        <p>Via Microsoft Teams</p>
+    <div style="background: #f7fafc; padding: 3rem 2rem; margin: 3rem 0;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <p style="color: #4a5568; font-size: 1.1rem; line-height: 1.8;">
+                ByteCraft Data Lab offers comprehensive online coaching in Python programming, SQL database management, and Data Analytics fundamentals. Our live classes are conducted via Microsoft Teams, making quality tech education accessible to students across Maharashtra. For admissions, demo lecture details, or Python and SQL Data Analytics training inquiries, please visit our <a href="/contact.html" style="color: #2d1b4e; font-weight: 600; text-decoration: underline;">Contact page</a>.
+            </p>
+        </div>
     </div>
-    <div class="badge">
-        <div class="badge-icon">📚</div>
-        <h3>3 Core Skills</h3>
-        <p>Python, SQL, Analytics</p>
-    </div>
-    <div class="badge">
-        <div class="badge-icon">🎓</div>
-        <h3>Structured Learning</h3>
-        <p>8-Week Program</p>
-    </div>
-    <div class="badge">
-        <div class="badge-icon">📍</div>
-        <h3>Maharashtra Students</h3>
-        <p>Latur & Beyond</p>
-    </div>
-</div>
-    <!-- SEO Content Paragraph -->
-<div style="background: #f7fafc; padding: 3rem 2rem; margin: 3rem 0;">
-    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <p style="color: #4a5568; font-size: 1.1rem; line-height: 1.8;">
-            ByteCraft Data Lab offers comprehensive online coaching in Python programming, SQL database management, and Data Analytics fundamentals. Our live classes are conducted via Microsoft Teams, making quality tech education accessible to students across Maharashtra. Whether you're a complete beginner or looking to strengthen your programming foundation, our structured 8-week curriculum covers all essential concepts. For enrollment details, batch timings, or course-related queries, please visit our <a href="/contact.html" style="color: #2d1b4e; font-weight: 600; text-decoration: underline;">Contact Page</a> or reach out via WhatsApp.
-        </p>
-    </div>
-</div>
 
-    <!-- Class Schedule -->
     <section id="schedule">
         <div class="section-title">
             <h2>Class Schedule</h2>
@@ -1344,388 +1141,568 @@
         </div>
     </section>
 
-    <!-- Excellence Features -->
-   <section>
-    <div class="section-title">
-        <h2>Online Python, SQL & Data Analytics Coaching</h2>
-        <p>ByteCraft Data Lab offers structured online classes for students in Latur and across Maharashtra</p>
-    </div>
-    <div class="features-grid">
-        <div class="feature-card">
-            <h3>Live Online Classes</h3>
-            <p>All sessions are conducted live via Microsoft Teams. Attend from anywhere in Maharashtra with a stable internet connection. Interactive sessions with screen sharing and doubt clarification.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Comprehensive Curriculum</h3>
-            <p>Learn Python programming fundamentals, SQL database management, and data analytics basics. 8-week structured program covering essential concepts through hands-on practice.</p>
-        </div>
-        <div class="feature-card">
-            <h3>For Students in Maharashtra</h3>
-            <p>Designed for Engineering, Polytechnic, and BCA students from Latur and other cities in Maharashtra. Evening batch timing suitable for college students.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Practical Learning Approach</h3>
-            <p>Focus on writing actual code and building projects. Weekly assignments and mini-projects help reinforce concepts learned in class.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Small Batch Size</h3>
-            <p>Limited seats per batch to ensure personalized attention. Instructor can address individual queries during live sessions.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Affordable Fee Structure</h3>
-            <p>₹3,499 for the complete 2-month program. No hidden charges. One-time payment for 60 hours of live instruction.</p>
-        </div>
-    </div>
-</section>
-
-    <!-- Week-wise Curriculum -->
-    
-            <div style="background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; margin-top: 2rem;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">📅 Total Learning: 60 Hours of Intensive Training</h3>
-                <p style="opacity: 0.9; font-size: 1.1rem;">8 weeks × 5 days × 90 minutes = Complete Python Mastery!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Instructor Section -->
-    <think>
-
-</think><section id="instructor">
-    <div class="section-title">
-        <h2>Your Instructor</h2>
-        <p>Learn from an experienced trainer dedicated to your programming success</p>
-    </div>
-    <div class="instructor-section">
-        <div class="instructor-profile">
-            <img src="instructor.jpg" alt="Amol Admane" class="instructor-img" onerror="this.innerHTML='👨‍🏫'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.fontSize='4rem';">
-            <h3 class="instructor-name">Amol Admane</h3>
-            <p> M.Tech(Computer Science)<p>
-            <p class="instructor-title">Experienced Programming Trainer</p>
-        </div>
-        <div>
-            <ul class="instructor-highlights">
-                <li class="highlight-item">
-                    <span class="highlight-icon">🎯</span>
-                    <div>
-                        <h4>Practical Learning Focus</h4>
-                        <p>Emphasizes hands-on coding exercises and real-world projects to build strong programming skills and confidence</p>
-                    </div>
-                </li>
-                <li class="highlight-item">
-                    <span class="highlight-icon">👥</span>
-                    <div>
-                        <h4>Personalized Student Guidance</h4>
-                        <p>Provides individual attention, clear explanations, and ongoing support to help each student overcome challenges and progress at their own pace</p>
-                    </div>
-                </li>
-                <li class="highlight-item">
-                    <span class="highlight-icon">📚</span>
-                    <div>
-                        <h4>Structured Teaching Approach</h4>
-                        <p>Uses a step-by-step methodology that combines theory with practice, ensuring comprehensive understanding of Python, SQL, and data analytics concepts</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-    <!-- Pricing & Contact -->
-   <!-- Pricing & Contact -->
-<section id="pricing">
-    <div class="section-title">
-        <h2>Course Details & Enrollment</h2>
-        <p>8-week online program covering Python, SQL, and Data Analytics fundamentals</p>
-    </div>
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <div class="limited-badge">LIMITED SEATS</div>
-            <div class="price-header">
-                <span class="price-icon">💰</span>
-                <h3>Course Fee</h3>
-            </div>
-            <div class="price">₹3,499/-</div>
-            <div class="price-details">
-                <div class="price-detail">
-                    <span><strong>Program:</strong></span>
-                    <span>Python, SQL & Data Analytics</span>
+    <section style="background: #f7fafc; padding: 5rem 2rem;">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h2 style="color: #2d1b4e; font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800;">8-Week Structured Curriculum</h2>
+            <p style="color: #4a5568; font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                Our comprehensive program covers Python programming, SQL databases, and Data Analytics fundamentals. Each week includes live sessions, hands-on projects, and practical assignments.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <p style="font-size: 2.5rem; margin-bottom: 0.5rem;">6</p>
+                    <p style="color: #718096; font-weight: 600;">Weeks Python</p>
                 </div>
-                <div class="price-detail">
-                    <span><strong>Duration:</strong></span>
-                    <span>8 Weeks (2 Months)</span>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <p style="font-size: 2.5rem; margin-bottom: 0.5rem;">1</p>
+                    <p style="color: #718096; font-weight: 600;">Week SQL</p>
                 </div>
-                <div class="price-detail">
-                    <span><strong>Mode:</strong></span>
-                    <span>Live Online via Microsoft Teams</span>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <p style="font-size: 2.5rem; margin-bottom: 0.5rem;">1</p>
+                    <p style="color: #718096; font-weight: 600;">Week Analytics</p>
                 </div>
-                <div class="price-detail">
-                    <span><strong>Timing:</strong></span>
-                    <span>8:00 PM – 9:30 PM (Evening)</span>
-                </div>
-                <div class="price-detail">
-                    <span><strong>Total Hours:</strong></span>
-                    <span>60 Hours of Live Instruction</span>
-                </div>
-                <div class="price-detail">
-                    <span style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">
-                        *Limited seats available. First batch enrollment ongoing.
-                    </span>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <p style="font-size: 2.5rem; margin-bottom: 0.5rem;">60</p>
+                    <p style="color: #718096; font-weight: 600;">Hours Training</p>
                 </div>
             </div>
-        </div>
-
-        <div class="contact-card" id="contact">
-            <div class="contact-header">
-                <span class="contact-icon">📞</span>
-                <h3>Enrollment Information</h3>
-            </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email:</strong>
-                    <span>bytecraftdatalab@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Location:</strong>
-                    <span>Latur, Maharashtra</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Service Area:</strong>
-                    <span>Online classes for students across Maharashtra</span>
-                </div>
-                <div class="contact-item">
-                    <strong>Platform:</strong>
-                    <span>Microsoft Teams (live online classes)</span>
-                </div>
-            </div>
-            <a href="https://wa.me/919421620187" class="whatsapp-btn" target="_blank">
-                💬 Inquire via WhatsApp: 9421620187
+            <a href="/curriculum.html" style="background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%); color: white; padding: 1.2rem 3rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.2rem; display: inline-block; margin-top: 2rem; transition: all 0.3s; box-shadow: 0 10px 30px rgba(45, 27, 78, 0.3);">
+                📚 View Complete Curriculum
             </a>
-            <p class="enrollment-note">
-                Contact us to learn more about the curriculum, batch timings, and enrollment process.
-            </p>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Testimonials -->
-   <!-- Testimonials -->
-<div class="testimonials">
-    <div class="section-title">
-        <h2>What Students Say</h2>
-        <p>Feedback from students who attended our Python and SQL classes</p>
+    <section>
+        <div class="section-title">
+            <h2>Why ByteCraft Data Lab?</h2>
+            <p>Experience excellence in Python education</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Academic Excellence</h3>
+                <p>Curriculum designed by experts for Engineering and Diploma students. Learn industry-standard practices from day one.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Practical First</h3>
+                <p>No boring theory. We build real projects from day one. Get hands-on experience with actual coding challenges.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Career Focused</h3>
+                <p>Dedicated modules for interview prep and internship placements. We prepare you for the real tech industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor">
+        <div class="section-title">
+            <h2>Meet Your Instructor</h2>
+            <p>Learn from industry expert with real-world experience</p>
+        </div>
+        <div class="instructor-section">
+            <div class="instructor-profile">
+                <img src="instructor.jpg" alt="Amol Admane" class="instructor-img" onerror="this.innerHTML='👨‍🏫'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.style.fontSize='4rem';">
+                <h3 class="instructor-name">Amol Admane</h3>
+                <p class="instructor-title">Assistant Professor | M.Tech (Computer Science)</p>
+            </div>
+            <div>
+                <ul class="instructor-highlights">
+                    <li class="highlight-item">
+                        <span class="highlight-icon">💻</span>
+                        <div>
+                            <h4>Hands-on Coding & Real-World Projects</h4>
+                            <p>Build portfolio-worthy projects while learning</p>
+                        </div>
+                    </li>
+                    <li class="highlight-item">
+                        <span class="highlight-icon">📊</span>
+                        <div>
+                            <h4>SQL Mastery for Data Applications</h4>
+                            <p>Master database skills essential for modern development</p>
+                        </div>
+                    </li>
+                    <li class="highlight-item">
+                        <span class="highlight-icon">🎯</span>
+                        <div>
+                            <h4>Job-Oriented 2-Month Intensive Program</h4>
+                            <p>Structured curriculum designed to make you industry-ready</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="section-title">
+            <h2>Course Investment</h2>
+            <p>Affordable pricing for maximum value</p>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="limited-badge">LIMITED</div>
+                <div class="price-header">
+                    <span class="price-icon">💰</span>
+                    <h3>Course Fee</h3>
+                </div>
+                <div class="price">₹3499/-</div>
+                <div class="price-details">
+                    <div class="price-detail">
+                        <span><strong>Batch:</strong></span>
+                        <span>Introductory (First Batch)</span>
+                    </div>
+                    <div class="price-detail">
+                        <span><strong>Duration:</strong></span>
+                        <span>2 Months Intensive</span>
+                    </div>
+                    <div class="price-detail">
+                        <span><strong>Timing:</strong></span>
+                        <span>8:00 PM – 9:30 PM (Evening)</span>
+                    </div>
+                    <div class="price-detail">
+                        <span style="color: #ef4444; font-size: 0.9rem; margin-top: 1rem;">
+                            *Limited seats available for the first batch only.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-header">
+                    <span class="contact-icon">📞</span>
+                    <h3>Get In Touch</h3>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <span>bytecraftdatalab@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        <span>Latur, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Focus:</strong>
+                        <span>Skill-based Learning</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/919421620187" class="whatsapp-btn" target="_blank">
+                    💬 Chat on WhatsApp: 94216 20187
+                </a>
+                <p class="enrollment-note">
+                    Practice is mandatory for guaranteed results. Enrollment via WhatsApp only.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="testimonials">
+        <div class="section-title">
+            <h2>What Students Say</h2>
+            <p>Real feedback from our Python learning community</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Best Python course! The practical approach helped me land my first internship. Amol Sir's teaching style is amazing!"</p>
+                <p class="testimonial-author">- Priya Sharma, Engineering Student</p>
+            </div>
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"From zero coding knowledge to building real projects in 2 months. The evening schedule was perfect for my college timing."</p>
+                <p class="testimonial-author">- Rahul Patil, BCA Student</p>
+            </div>
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">"Worth every rupee! The SQL mastery module alone is worth the course fee. Highly recommended for career-focused students."</p>
+                <p class="testimonial-author">- Sneha Deshmukh, Polytechnic Student</p>
+            </div>
+        </div>
     </div>
-    <div class="testimonial-grid">
-        <div class="testimonial">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"The live sessions on Microsoft Teams made it easy to follow along. I could ask questions during class and get immediate help. Good foundation in Python basics."</p>
-            <p class="testimonial-author">- Engineering Student, Latur</p>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ByteCraft Data Lab</h3>
+                <p>Empowering students with practical Python skills for tomorrow's tech industry.</p>
+                <p style="margin-top: 1rem;">🐍 Learn. Code. Excel.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="/">Home</a>
+                <a href="#schedule">Class Schedule</a>
+                <a href="/curriculum.html">Course Curriculum</a>
+                <a href="/syllabus.pdf" target="_blank">Download Syllabus</a>
+                <a href="#pricing">Course Fee</a>
+                <a href="#instructor">Our Instructor</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 bytecraftdatalab@gmail.com</p>
+                <p>📱 +91 94216 20187</p>
+                <p>📍 Latur, Maharashtra</p>
+                <p>🌐 www.bytecraftdatalab.com</p>
+                <a href="/contact.html">Contact ByteCraft Data Lab</a>
+            </div>
         </div>
-        <div class="testimonial">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"Evening batch timing was perfect for my college schedule. Learned Python and SQL fundamentals in 2 months. The projects helped me understand concepts better."</p>
-            <p class="testimonial-author">- BCA Student, Maharashtra</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ByteCraft Data Lab. All rights reserved. | Crafted with 💛 for aspiring coders</p>
         </div>
-        <div class="testimonial">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"Affordable course with good content coverage. The instructor explains concepts clearly and provides practical examples. Helped me get started with programming."</p>
-            <p class="testimonial-author">- Polytechnic Student, Latur</p>
-        </div>
-    </div>
-</div>
-    <!-- Demo Booking Popup -->
-<div class="demo-popup-overlay" id="demoPopup">
-    <div class="demo-popup">
-        <button class="demo-popup-close" id="closePopup">✕</button>
-        <div class="demo-popup-header">
-            <div class="demo-popup-icon">🎓</div>
-            <h2>Book Your Free Demo This Sunday!</h2>
-            <p class="demo-popup-subtitle">Experience our live Python class via Microsoft Teams</p>
-        </div>
-        
-        <form id="demoForm">
-            <div class="demo-form-group">
-                <label for="demoName">Your Name *</label>
-                <input type="text" id="demoName" placeholder="Enter your full name" required>
+    </footer>
+
+    <a href="https://wa.me/919421620187?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class" class="sticky-demo-btn" target="_blank">
+        <span class="sticky-demo-btn-icon">📞</span>
+        Book Free Demo
+    </a>
+
+    <div class="demo-popup-overlay" id="demoPopup">
+        <div class="demo-popup">
+            <button class="demo-popup-close" id="closePopup">✕</button>
+            <div class="demo-popup-header">
+                <div class="demo-popup-icon">🎓</div>
+                <h2>Book Your Free Demo This Sunday!</h2>
+                <p class="demo-popup-subtitle">Experience our live Python class via Microsoft Teams</p>
             </div>
             
-            <div class="demo-form-group">
-                <label for="demoMobile">Mobile Number *</label>
-                <input type="tel" id="demoMobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
-            </div>
-            
-            <div class="demo-form-group">
-                <label for="demoEmail">Email Address *</label>
-                <input type="email" id="demoEmail" placeholder="your@email.com" required>
-            </div>
-            
-            <button type="submit" class="demo-submit-btn">
-                📞 Book Demo via WhatsApp
-            </button>
-            
-            <p class="demo-popup-note">
-                We'll confirm your demo slot via WhatsApp
-            </p>
-        </form>
+            <form id="demoForm">
+                <div class="demo-form-group">
+                    <label for="demoName">Your Name *</label>
+                    <input type="text" id="demoName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="demo-form-group">
+                    <label for="demoMobile">Mobile Number *</label>
+                    <input type="tel" id="demoMobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                </div>
+                
+                <div class="demo-form-group">
+                    <label for="demoEmail">Email Address *</label>
+                    <input type="email" id="demoEmail" placeholder="your@email.com" required>
+                </div>
+                
+                <button type="submit" class="demo-submit-btn">
+                    📞 Book Demo via WhatsApp
+                </button>
+                
+                <p class="demo-popup-note">
+                    We'll confirm your demo slot via WhatsApp
+                </p>
+            </form>
+        </div>
     </div>
-</div>
+
     <script>
-// Demo Popup Functionality
-(function() {
-    const popup = document.getElementById('demoPopup');
-    const closeBtn = document.getElementById('closePopup');
-    const demoForm = document.getElementById('demoForm');
-    
-    // Show popup after 2 seconds
-    setTimeout(function() {
-        popup.classList.add('active');
-    }, 2000);
-    
-    // Close popup when X is clicked
-    closeBtn.addEventListener('click', function() {
-        popup.classList.remove('active');
-    });
-    
-    // Close popup when clicking outside
-    popup.addEventListener('click', function(e) {
-        if (e.target === popup) {
-            popup.classList.remove('active');
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                navLinks.classList.toggle('active');
+                menuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    menuBtn.textContent = '☰';
+                });
+            });
         }
-    });
-    
-    // Handle form submission
-    demoForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('demoName').value;
-        const mobile = document.getElementById('demoMobile').value;
-        const email = document.getElementById('demoEmail').value;
-        
-        // Validate mobile number
-        if (mobile.length !== 10) {
-            alert('Please enter a valid 10-digit mobile number');
-            return;
-        }
-        
-        // Create WhatsApp message
-        const message = `Hi! I want to book a FREE DEMO class this Sunday.
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .pricing-card, .contact-card, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        (function() {
+            const popup = document.getElementById('demoPopup');
+            const closeBtn = document.getElementById('closePopup');
+            const demoForm = document.getElementById('demoForm');
+            
+            setTimeout(function() {
+                popup.classList.add('active');
+            }, 2000);
+            
+            closeBtn.addEventListener('click', function() {
+                popup.classList.remove('active');
+            });
+            
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    popup.classList.remove('active');
+                }
+            });
+            
+            demoForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('demoName').value;
+                const mobile = document.getElementById('demoMobile').value;
+                const email = document.getElementById('demoEmail').value;
+                
+                if (mobile.length !== 10) {
+                    alert('Please enter a valid 10-digit mobile number');
+                    return;
+                }
+                
+                const message = `Hi! I want to book a FREE DEMO class this Sunday.
 
 Name: ${name}
 Mobile: ${mobile}
 Email: ${email}
 
 Please confirm my demo slot. Thank you!`;
-        
-        // Encode message for URL
-        const encodedMessage = encodeURIComponent(message);
-        
-        // Redirect to WhatsApp
-        const whatsappURL = `https://wa.me/919421620187?text=${encodedMessage}`;
-        window.open(whatsappURL, '_blank');
-        
-        // Close popup
-        popup.classList.remove('active');
-        
-        // Reset form
-        demoForm.reset();
-    });
-})();
-</script>
-
-    <!-- Footer -->
-    <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>ByteCraft Data Lab</h3>
-            <p>Online coaching for Python, SQL, and Data Analytics. Live classes via Microsoft Teams for students in Latur and across Maharashtra.</p>
-            <p style="margin-top: 1rem;">🐍 Learn Programming Skills Online</p>
-        </div>
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#schedule">Class Schedule</a>
-            <a href="#curriculum">Course Curriculum</a>
-            <a href="/syllabus.pdf" target="_blank">Download Syllabus</a>
-            <a href="#pricing">Course Fee</a>
-            <a href="#instructor">Instructor</a>
-        </div>
-        <div class="footer-section">
-            <h3>Contact Information</h3>
-            <p>📧 bytecraftdatalab@gmail.com</p>
-            <p>📱 +919421620187</p>
-            <p>📍 Latur, Maharashtra</p>
-            <p>🌐 www.bytecraftdatalab.com</p>
-            <p>💻 Live Online Classes via Microsoft Teams</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 ByteCraft Data Lab. Crafted with 💛 for aspiring coders. </p>
-        <p style="margin-top:10px; font-size:14px;">
-  ByteCraft Data Lab is an online coaching platform offering Python, SQL, and Data Analytics training
-  for students from Latur and across Maharashtra.
-    </div>
-        <!-- Sticky Book Demo Button -->
-<a href="https://wa.me/919421620187?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class%20for%20Python/SQL/Data Analytics%20course" class="sticky-demo-btn" target="_blank">
-    <span class="sticky-demo-btn-icon">📞</span>
-    Book Free Demo
-</a>
-</footer>
-            
-
-    <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.getElementById('navLinks');
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            navLinks.classList.toggle('active');
-            menuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
-            console.log('Menu toggled:', navLinks.classList.contains('active'));
-        });
-
-        // Close mobile menu when link is clicked
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.classList.remove('active');
-                menuBtn.textContent = '☰';
+                
+                const encodedMessage = encodeURIComponent(message);
+                const whatsappURL = `https://wa.me/919421620187?text=${encodedMessage}`;
+                window.open(whatsappURL, '_blank');
+                popup.classList.remove('active');
+                demoForm.reset();
             });
-        });
-    }
+        })();
+    </script>
+</body>
+</html>
+```
 
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ByteCraft Data Lab for Python, SQL, and Data Analytics online coaching in Latur, Maharashtra">
+    <meta name="theme-color" content="#2d1b4e">
+    <link rel="canonical" href="https://bytecraftdatalab.com/contact.html">
+    <title>Contact ByteCraft Data Lab | Python, SQL & Data Analytics Coaching</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #1a202c;
+            background: #f7fafc;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        header {
+            background: linear-gradient(135deg, #2d1b4e 0%, #4c1d95 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #2d1b4e;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .contact-info {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        .contact-item {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+        }
+        .contact-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-details strong {
+            color: #2d1b4e;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+        }
+        .whatsapp-btn:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+        .back-link {
+            display: inline-block;
+            color: #2d1b4e;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #2d1b4e;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: #2d1b4e;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
             }
-        });
-    });
-
-    // Add scroll animation
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+            .content-section {
+                padding: 2rem 1.5rem;
             }
-        });
-    }, observerOptions);
+            .contact-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact ByteCraft Data Lab</h1>
+        <p class="subtitle">Get in Touch for Python, SQL & Data Analytics Classes</p>
+    </header>
 
-    // Animate elements on scroll
-    document.querySelectorAll('.feature-card, .pricing-card, .contact-card, .testimonial').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'all 0.6s ease-out';
-        observer.observe(el);
-    });
-        
-</script>
+    <div class="container">
+        <div class="content-section">
+            <h2>About Our Online Coaching Program</h2>
+            <p>ByteCraft Data Lab provides comprehensive online coaching for Python programming, SQL database management, and Data Analytics fundamentals. Our classes are specifically designed for students and working professionals in Latur, Maharashtra, and surrounding regions who want to develop practical programming skills.</p>
+            
+            <p>We conduct live interactive sessions every evening via Microsoft Teams, making it convenient for college students and working professionals to attend from anywhere in Maharashtra. Our 8-week structured curriculum covers Python from basics to intermediate level, essential SQL queries and database operations, and foundational data analytics concepts.</p>
+            
+            <p>The evening batch runs Monday through Friday from 8:00 PM to 9:30 PM, allowing participants to balance their regular schedules with skill development. Each session includes hands-on coding practice, real-world examples, and weekly projects to reinforce learning. Our instructor, based in Latur, brings academic expertise and practical teaching experience to help students build a strong programming foundation.</p>
+            
+            <p>Whether you are an Engineering student, BCA student, Polytechnic student, or a professional looking to upskill, our online Python and SQL classes provide the flexibility and structure needed for effective learning. We keep batch sizes limited to ensure personalized attention during live sessions.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Get in Touch</h2>
+            <p>For inquiries about course curriculum, batch timings, enrollment process, or any questions about our Python, SQL, and Data Analytics program, please contact us using the information below.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div class="contact-details">
+                        <strong>WhatsApp / Call</strong>
+                        <span>+91 94216 20187</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div class="contact-details">
+                        <strong>Email</strong>
+                        <span>bytecraftdatalab@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-details">
+                        <strong>Location</strong>
+                        <span>Latur, Maharashtra, India</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <div class="contact-details">
+                        <strong>Class Mode</strong>
+                        <span>Live Online Classes via Microsoft Teams</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">⏰</span>
+                    <div class="contact-details">
+                        <strong>Batch Timing</strong>
+                        <span>Evening Batch: 8:00 PM - 9:30 PM (Mon-Fri)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/919421620187?text=Hi%2C%20I%20want%20to%20know%20about%20Python%2C%20SQL%20and%20Data%20Analytics%20course" class="whatsapp-btn" target="_blank">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+
+            <p style="margin-top: 2rem; text-align: center; color: #718096; font-size: 0.95rem;">We typically respond within a few hours during business days. Feel free to reach out with any questions about our online Python, SQL, and Data Analytics coaching program in Latur, Maharashtra.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="/" class="back-link">← Back to Homepage</a>
+        </div>
+    </div>
+</body>
+</html>
+```
